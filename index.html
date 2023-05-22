@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Product Registration Form</h1>
+    <form id="product-form">
+      <label for="sku">SKU or Code:</label>
+      <input type="text" id="sku" name="sku" required />
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" required />
+
+      <label for="photo">Photo URL:</label>
+      <input type="text" id="photo" name="photo" required />
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" required></textarea>
+
+      <input type="submit" value="Save" />
+      <input type="reset" value="Reset" />
+    </form>
+
+    <h2>Registered Products:</h2>
+    <table id="product-table">
+      <thead>
+        <tr>
+          <th>SKU or Code</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Photo</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
